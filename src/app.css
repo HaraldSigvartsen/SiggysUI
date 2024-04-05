@@ -3,4 +3,73 @@
 @tailwind utilities;
 
 @layer base {
+	/* Dim theme */
+	.Dim {
+		--color-bg: hsl(211.58, 25.47%, 19%);
+		--color-primary: hsl(95, 63%, 72%);
+		--color-secondary: hsl(10, 100%, 68%);
+		--color-accent: hsl(265, 64%, 70%);
+		--color-neutral: hsl(220, 16%, 16%);
+		--color-neutral-content: hsl(194, 32%, 74%);
+		--color-base-100: hsl(220, 12%, 24%);
+		--color-base-200: hsl(219, 14%, 20%);
+		--color-base-300: hsl(221, 16%, 18%);
+		--color-base-content: hsl(194, 32%, 74%);
+		--color-info: hsl(186, 100%, 57%);
+		--color-success: hsl(162, 55%, 72%);
+		--color-warning: hsl(45, 87%, 68%);
+		--color-error: hsl(8, 100%, 79%);
+	}
+
+	/* Pastel theme: */
+	.Pastel {
+		--color-bg: hsl(0, 17.91%, 13.92%);
+		--color-primary: hsl(292, 24%, 77%);
+		--color-secondary: hsl(4, 72%, 86%);
+		--color-accent: hsl(154, 48%, 81%);
+		--color-neutral: hsl(203, 35%, 64%);
+		--color-base-100: hsl(0, 100%, 93%);
+		--color-base-200: hsl(210, 10%, 98%);
+		--color-base-300: hsl(220, 13%, 83%);
+	}
+
+	/* Black theme */
+	.Black {
+		--color-bg: hsl(0, 17.91%, 13.92%);
+		--color-primary: hsl(0, 0%, 22%);
+		--color-secondary: hsl(0, 0%, 22%);
+		--color-accent: hsl(0, 0%, 22%);
+		--color-base-100: hsl(0, 0%, 0%);
+		--color-base-200: hsl(0, 0%, 8%);
+		--color-base-300: hsl(0, 0%, 15%);
+		--color-base-content: hsl(0, 0%, 84%);
+		--color-neutral: hsl(0, 0%, 22%);
+		--color-info: hsl(240, 100%, 50%);
+		--color-success: hsl(120, 100%, 25%);
+		--color-warning: hsl(60, 100%, 50%);
+		--color-error: hsl(0, 100%, 50%);
+	}
+
+	/* Retro theme */
+	.Retro {
+		--color-bg: hsl(0, 17.91%, 13.92%);
+		--color-primary: hsl(355, 70%, 79%);
+		--color-secondary: hsl(135, 29%, 74%);
+		--color-accent: hsl(23, 74%, 60%);
+		--color-accent-content: hsl(30, 8%, 14%);
+		--color-neutral: hsl(322, 6%, 19%);
+		--color-neutral-content: hsl(44, 21%, 87%);
+		--color-base-100: hsl(42, 31%, 84%);
+		--color-base-200: hsl(40, 30%, 78%);
+		--color-base-300: hsl(38, 37%, 72%);
+		--color-base-content: hsl(30, 8%, 14%);
+		--color-info: hsl(218, 80%, 53%);
+		--color-success: hsl(143, 74%, 38%);
+		--color-warning: hsl(36, 94%, 46%);
+		--color-error: hsl(12, 78%, 33%);
+	}
+}
+
+*:focus-visible {
+	outline: 1px solid !important;
 }
