@@ -18,7 +18,7 @@
 	];
 </script>
 
-<header class="w-full border-b-2 p-4">
+<header class="w-full p-4">
 	<nav class="sticky flex w-10/12">
 		<a class="ml-4 font-bold" href="/">SiggysUI</a>
 

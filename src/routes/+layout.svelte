@@ -3,7 +3,7 @@
 	import MainMenu from "$lib/components/navigation/mainmenu/mainMenu.svelte";
 </script>
 
-<div class="flex min-h-screen flex-col bg-bgColor text-neutral-content">
+<div class="text-textColor flex min-h-screen flex-col bg-bgColor">
 	<MainMenu />
 	<main><slot /></main>
 </div>

@@ -6,6 +6,7 @@ export default {
 		extend: {
 			colors: {
 				bgColor: `var(--color-bg)`,
+				textColor: `var(--color-text)`,
 				primary: `var(--color-primary)`,
 				secondary: `var(--color-secondary)`,
 				accent: `var(--color-accent)`,
