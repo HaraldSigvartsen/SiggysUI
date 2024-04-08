@@ -4,5 +4,5 @@
 </script>
 
 <li>
-	<a href={url}>{name}</a>
+	<a class="hover:underline" href={url}>{name}</a>
 </li>

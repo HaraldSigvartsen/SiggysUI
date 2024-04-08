@@ -4,6 +4,8 @@
 </script>
 
 <div class="flex min-h-screen">
-	<SideMenu />
+	<div class="hidden md:block">
+		<SideMenu />
+	</div>
 	<main class="w-full"><slot /></main>
 </div>

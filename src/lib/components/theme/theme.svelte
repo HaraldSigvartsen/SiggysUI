@@ -30,17 +30,17 @@
 
 <div class="">
 	<button
-		class={`flex items-center rounded-md p-2 hover:bg-base-100 ${isExpanded ? "bg-base-100" : "bg-none"}`}
+		class={`flex items-center rounded-md border p-2 hover:bg-base-100 md:border-none ${isExpanded ? "bg-base-100" : "bg-none"}`}
 		on:click={clickHandler}
 		>Themes <ArrowDown />
 	</button>
 	{#if isExpanded}
-		<ul class="fixed mt-2 flex min-w-min flex-col gap-y-2 rounded bg-base-100 py-2 shadow-sm" transition:slide>
+		<ul class="fixed mt-2 flex min-w-min flex-col gap-y-2 rounded bg-base-100 shadow-sm" transition:slide>
 			{#each themes as theme}
-				<li data-theme={theme} class="w-full rounded-md px-8 hover:bg-base-100">
+				<li data-theme={theme} class="w-full hover:bg-neutral">
 					<button
 						data-theme={theme}
-						class="my-auto flex flex-row items-center gap-x-4"
+						class="my-auto flex flex-row items-center gap-x-4 px-8 py-1"
 						on:click={() => applyTheme(theme)}
 					>
 						<span class="w-1/2">{theme}</span>
