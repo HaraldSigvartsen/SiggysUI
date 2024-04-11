@@ -29,7 +29,7 @@
 	}
 </script>
 
-<div class="z-20">
+<div class="z-50">
 	<Button
 		aria-label="themes selection"
 		class="rounded-lg"

@@ -48,10 +48,11 @@
 			base100: getComputedStyle(root).getPropertyValue(`--color-base-100`),
 		};
 	};
-	const themeColors = getThemeColors();
-	const { primary, secondary, accent, neutral, base100 } = themeColors;
-	const waveColors = [primary, secondary, accent, neutral, base100];
+
 	const drawWave = (n: number) => {
+		const themeColors = getThemeColors();
+		const { primary, secondary, accent, neutral, base100 } = themeColors;
+		const waveColors = [primary, secondary, accent, neutral, base100];
 		nt += getSpeed();
 		for (i = 0; i < n; i++) {
 			ctx.beginPath();

@@ -50,7 +50,7 @@
 		@apply bg-base-100 text-textColor hover:border  hover:bg-base-200;
 	}
 	.destructive {
-		@apply hover:bg-errorActive bg-error text-base-200;
+		@apply bg-error text-base-200 hover:bg-errorActive;
 	}
 	.outline {
 		@apply border border-base-100 bg-transparent text-textColor hover:bg-base-100;
