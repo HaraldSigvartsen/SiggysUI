@@ -24,8 +24,7 @@ To start using this component library in your SvelteKit project, follow these si
    yarn add your-component-library
 Usage: Import the desired components into your Svelte components and start using them.
 
-html
-Copy code
+```
 <script>
   import { Button, Card } from 'your-component-library';
 </script>
@@ -34,6 +33,7 @@ Copy code
 <Card>
   <p>This is a card component</p>
 </Card>
+```
 Customization: Tailwind CSS is used for styling. You can customize the appearance of components by editing your tailwind.config.js file.
 
 Documentation: Explore the documentation to learn more about available components and their props.
