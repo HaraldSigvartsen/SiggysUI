@@ -32,7 +32,7 @@
 	aria-busy={isLoading}
 	aria-label={isLoading ? loadingText : $$restProps["aria-label"] ?? $$restProps.title}
 	tabindex={isLoading ? -1 : undefined}
-	class={`${variant} ${size} ${$$restProps.class ?? ""} rounded-3xl `}
+	class={`${variant} ${size} ${$$restProps.class ?? ""} flex gap-x-2 rounded-3xl `}
 >
 	{#if isLoading}
 		<span {...$$restProps} class={`spinner ${$$restProps.class}`} />
@@ -69,7 +69,7 @@
 	}
 
 	.extra-small {
-		@apply px-4 py-2.5 text-xs;
+		@apply px-4 py-2.5 text-sm;
 	}
 
 	.large {

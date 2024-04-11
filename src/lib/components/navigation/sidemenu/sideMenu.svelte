@@ -29,7 +29,7 @@
 	];
 </script>
 
-<nav class="flex flex-col py-4 md:min-h-screen md:w-4/12 md:px-8">
+<nav class="flex flex-col py-4 md:min-h-screen md:px-8">
 	<ul>
 		<h4 class="font-bold">Getting Started</h4>
 		{#each navItems as item, index}

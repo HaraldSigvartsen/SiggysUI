@@ -2,6 +2,7 @@
 	import { onMount } from "svelte";
 	import { slide } from "svelte/transition";
 	import Arrow from "../icons/arrow.svelte";
+	import Button from "../button/button.svelte";
 
 	let themes = ["Dim", "Retro", "Pastel", "Black"];
 	let selectedTheme: string = "Dim";
@@ -28,15 +29,20 @@
 	}
 </script>
 
-<div class="">
-	<button
-		class={` flex items-center gap-x-2 rounded-md border p-2 hover:bg-base-100 md:border-none ${isExpanded ? "bg-base-100" : "bg-none"}`}
+<div class="z-20">
+	<Button
+		aria-label="themes selection"
+		class="rounded-lg"
+		text="Themes"
+		size="extra-small"
+		variant="ghost"
 		on:click={clickHandler}
 	>
-		Themes <Arrow />
-	</button>
+		<Arrow /></Button
+	>
+
 	{#if isExpanded}
-		<ul class="fixed mt-2 flex min-w-min flex-col gap-y-2 rounded-md bg-base-100 shadow-sm" transition:slide>
+		<ul class="fixed z-50 mt-2 flex min-w-min flex-col gap-y-2 rounded-md bg-base-100 shadow-sm" transition:slide>
 			{#each themes as theme, idx}
 				<li
 					data-theme={theme}
