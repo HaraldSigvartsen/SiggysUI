@@ -14,13 +14,14 @@
     --color-neutral: hsl(220, 16%, 16%);
     --color-neutral-content: hsl(194, 32%, 74%);
     --color-base-100: hsl(220, 12%, 30%);
-    --color-base-200: hsl(219, 14%, 20%);
+    --color-base-200: hsl(218, 12%, 27%);
     --color-base-300: hsl(221, 16%, 18%);
     --color-base-content: hsl(194, 32%, 74%);
     --color-info: hsl(186, 100%, 57%);
     --color-success: hsl(162, 55%, 72%);
     --color-warning: hsl(45, 87%, 68%);
-    --color-error: hsl(8, 100%, 79%);
+    --color-error: hsl(8, 84%, 61%);
+    --color-error-active: hsl(8, 89%, 57%);
   }
 
   /* Pastel theme: */

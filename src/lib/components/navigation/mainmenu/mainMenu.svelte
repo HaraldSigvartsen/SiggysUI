@@ -19,6 +19,10 @@
 			name: "Components",
 			url: "/components",
 		},
+		{
+			name: "Icons",
+			url: "/icons",
+		},
 	];
 
 	let isOpen: boolean = false;

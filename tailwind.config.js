@@ -20,6 +20,7 @@ export default {
 				success: `var(--color-success)`,
 				warning: `var(--color-warning)`,
 				error: `var(--color-error)`,
+				errorActive: `var(--color-error-active)`,
 			},
 		},
 	},
