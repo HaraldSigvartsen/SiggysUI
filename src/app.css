@@ -64,8 +64,8 @@
     --color-primary: hsl(0, 77%, 65%);
     --color-secondary: hsl(0, 0%, 22%);
     --color-accent: hsl(0, 25%, 36%);
-    --color-base-100: hsl(0, 0%, 0%);
-    --color-base-200: hsl(0, 0%, 8%);
+    --color-base-100: hsl(0, 0%, 10%);
+    --color-base-200: hsl(0, 0%, 12%);
     --color-base-300: hsl(0, 0%, 15%);
     --color-base-content: hsl(0, 0%, 84%);
     --color-neutral: hsl(0, 2%, 47%);
