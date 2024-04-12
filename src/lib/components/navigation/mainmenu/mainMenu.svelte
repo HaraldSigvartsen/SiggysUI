@@ -26,6 +26,7 @@
 	];
 
 	let isOpen: boolean = false;
+	let isThemeExpanded: boolean = false;
 
 	function toggleMenu() {
 		isOpen = !isOpen;
@@ -36,8 +37,8 @@
 	}
 </script>
 
-<header class="w-full md:p-4">
-	<nav class=" md:flex md:w-11/12">
+<header class="sticky z-50 w-full md:relative md:p-4">
+	<nav class=" md:flex md:w-10/12">
 		<div class="hidden w-full items-center md:flex">
 			<a class="ml-4 font-bold" href="/">SiggysUI</a>
 
@@ -53,7 +54,7 @@
 		</div>
 
 		<!-- Mobile navigation -->
-		<div class="flex flex-col overflow-hidden md:hidden">
+		<div class="sticky top-0 z-50 flex flex-col overflow-hidden md:hidden">
 			<div class="flex items-center p-2 md:hidden">
 				<div class="h-fit">
 					<Hamburger {isOpen} {toggleMenu} />

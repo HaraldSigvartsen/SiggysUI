@@ -84,8 +84,8 @@
 	});
 </script>
 
-<div class={cn("flex h-screen flex-col items-center justify-center")}>
-	<canvas class="absolute inset-0 top-20 z-0" bind:this={canvasRef} id="canvas"></canvas>
+<div class={cn("flex flex-col items-center justify-center")}>
+	<canvas class="absolute inset-0 top-0 z-0" bind:this={canvasRef} id="canvas"></canvas>
 	<div class={cn("relative z-10")} {...$$props}>
 		<slot />
 	</div>
@@ -94,5 +94,13 @@
 <style>
 	#canvas {
 		background-color: transparent;
+	}
+	/* Blur support for safari */
+	@supports (-webkit-backdrop-filter: blur(10px)) {
+		#canvas {
+			-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(40px);
+			filter: blur(10px);
+		}
 	}
 </style>

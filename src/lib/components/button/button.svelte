@@ -4,17 +4,14 @@
 	export let isLoading: boolean = false;
 	export let loadingText: string = "Loading...";
 
-	export let type: "button" | "submit" | "reset" | "link" = "button";
+	export let type: string = "button";
 
 	export let variant: "default" | "destructive" | "outline" | "ghost" | "link";
 
 	export let size: "small" | "wide" | "large" | "extra-small" | "undefined";
-
-	export let disabled: boolean = false;
-
-	$: type = type === "link" ? "a" : type;
 </script>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <svelte:element
 	this={type}
 	{...$$restProps}
@@ -27,8 +24,6 @@
 	on:touchend|passive
 	on:mouseleave
 	on:touchcancel|passive
-	{type}
-	disabled={disabled || isLoading}
 	aria-busy={isLoading}
 	aria-label={isLoading ? loadingText : $$restProps["aria-label"] ?? $$restProps.title}
 	tabindex={isLoading ? -1 : undefined}
